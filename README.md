@@ -34,4 +34,4 @@ I didn't have access to any Figma files, so I quickly analyzed the screenshots t
 
 ### What I learned
 
-Using `<picture>` 👍
+I learned more about `<picture>`
