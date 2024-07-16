@@ -1,7 +1,7 @@
 :root {
     /* Primary */
     --darkCyan: hsl(158, 36%, 37%);
-    --cream: Cream: hsl(30, 38%, 92%);
+    --cream: hsl(30, 38%, 92%);
 
     /* Neutral */
     --veryDarkBlue: hsl(212, 21%, 14%);
@@ -20,3 +20,112 @@ html, body {
     height: 100%;
 }
 
+body {
+    min-height: 100vh;
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 1rem);
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 95%;
+    max-width: 25rem;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: auto;
+}
+
+.product-description {
+    padding: 1rem 1.7rem;
+}
+
+.product-type {
+    text-transform: uppercase;
+    margin: .8rem 0;
+    font-size: .8rem;
+    letter-spacing: .3rem;
+    font-weight: 500;
+    color: var(--darkGrayishBlue);
+}
+
+.product-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    color: var(--veryDarkBlue);
+    margin: .8rem 0;
+}
+
+.product-desc-text {
+    font-size: .9rem;
+    color: var(--darkGrayishBlue);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.product-price {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-price_current {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    color: var(--darkCyan);
+}
+
+.product-price_old {
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: var(--darkGrayishBlue);
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.product-addCart-button {
+    background-color: var(--darkCyan);
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .7rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.product-addCart-button:hover {
+    background-color: hsl(158, 48.24%, 24%);
+}
+
+.cart-icon {
+    margin-right: .8rem;
+    vertical-align: bottom;
+}
+
+footer {
+    text-align: center;
+    font-size: .7rem;
+    color: var(--veryDarkBlue);
+    font-weight: 600;
+}
+
+footer a {
+    color: var(--darkCyan);
+}
